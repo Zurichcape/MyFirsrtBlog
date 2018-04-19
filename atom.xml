@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Little Programmer</title>
+  <icon>https://www.gravatar.com/avatar/27285a61cc73102902fb84bed472b7b3</icon>
+  <subtitle>ベクトルドリーム</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zurichcape.github.io/"/>
+  <updated>2018-04-19T09:19:55.400Z</updated>
+  <id>https://zurichcape.github.io/</id>
+  
+  <author>
+    <name>Zurichcape</name>
+    <email>zurich_cape@126.com</email>
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Java_learning</title>
+    <link href="https://zurichcape.github.io/2018/04/19/java-note/"/>
+    <id>https://zurichcape.github.io/2018/04/19/java-note/</id>
+    <published>2018-04-19T08:05:36.000Z</published>
+    <updated>2018-04-19T09:19:55.400Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="性质"><a href="#性质" class="headerlink" title="性质"></a>性质</h1><h3 id="Java-is-an-object-oriented-language-This-kind-of-language-has-four-basic-properties"><a href="#Java-is-an-object-oriented-language-This-kind-of-language-has-four-basic-properties" class="headerlink" title="Java is an object-oriented language. This kind of language has four basic properties:"></a>Java is an object-oriented language. This kind of language has four basic properties:</h3><ul><br><li>Abstract(抽象)</li><br><li>Encapsulation(封装)</li><br><li>Inheritance(继承)</li><br><li>Polymorphism(多态)</li><br></ul><h1 id="特点"><a href="#特点" class="headerlink" title="特点"></a>特点</h1><h3 id="Java-has-more-advantages-over-than-C-C"><a href="#Java-has-more-advantages-over-than-C-C" class="headerlink" title="Java has more advantages over than C/C++"></a>Java has more advantages over than C/C++</h3><ul><br><li>Safety</li><br><li>Platform-independent</li><br><li>Multithreding</li><br><li>Memorymanagement</li><br></ul><h3 id="Differences-between-Java-and-C"><a href="#Differences-between-Java-and-C" class="headerlink" title="Differences between Java and C++:"></a>Differences between Java and C++:</h3><blockquote><ol><br><li> There are no preprocessing functions such as #include and #define in Java, and other classes and packages are included with import statement</li><br><li> There are no structures, unions and typedefs in Java</li><br><li> All functions have to belong to a class in Java</li><br><li> There are no pointers and no multiple inheritance, Java only supports single inheritance</li><br><li> goto is disabled in Java, but goto is a reserved keyword</li><br><li> No operator overloading (操作符重载) in Java</li><br><li> There is no global variable in Java, you can define public, static data members in the class to achieve the same functionality</li><br></ol> <footer><strong>York</strong><cite>Java-Class</cite></footer></blockquote><h1 id="Applet-小应用程序"><a href="#Applet-小应用程序" class="headerlink" title="Applet (小应用程序)"></a>Applet (小应用程序)</h1><pre><code>– Runs in a Java-enabled web browser– The browser&apos;s interpreter converts the bytecode into instructions that match the machine, and executes the applet in the web page– Differences between Applet and Application: different running environments, applets are always placed in the graphical user interface of the Web browser</code></pre><figure class="highlight plain"><figcaption><span>java-applet</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import java.awt.Graphics;</span><br><span class="line">import java.applet.Applet;</span><br><span class="line">public class MyApplet extends Applet</span><br><span class="line">&#123;</span><br><span class="line">public String s;</span><br><span class="line">public void init()</span><br><span class="line">&#123; s=new String(&quot;Hello World !&quot;); &#125;</span><br><span class="line">public void paint(Graphics g)</span><br><span class="line">&#123; g.drawString(s,60,40); &#125;</span><br><span class="line">&#125;</span><br><span class="line">HTML:</span><br><span class="line">&lt;applet code=&quot;MyApplet.class&quot; width=&quot;400&quot; height=&quot;400&quot;&gt;</span><br><span class="line">&lt;/applet&gt;</span><br></pre></td></tr></table></figure><h1 id="数据类型"><a href="#数据类型" class="headerlink" title="数据类型"></a>数据类型</h1><h3 id="The-basic-datatypes-of-java-are-almost-same-as-C-C"><a href="#The-basic-datatypes-of-java-are-almost-same-as-C-C" class="headerlink" title="The basic datatypes of java are almost same as C/C++"></a>The basic datatypes of java are almost same as C/C++</h3><p>An expression is made up of a series of variables, literals, operators, and<br>method calls, and an expression can calculate a value<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">int cadence = 0;</span><br><span class="line">anArray[0] = 100;</span><br><span class="line">System.out.println(&quot;Element 1 at index 0: &quot; + anArray[0]);</span><br><span class="line">int result = 1 + 2; // result is now 3</span><br><span class="line">if (value1 == value2) System.out.println(&quot;value1 == value2&quot;)</span><br></pre></td></tr></table></figure></p>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;性质&quot;&gt;&lt;a href=&quot;#性质&quot; class=&quot;headerlink&quot; title=&quot;性质&quot;&gt;&lt;/a&gt;性质&lt;/h1&gt;&lt;h3 id=&quot;Java-is-an-object-oriented-language-This-kind-of-language-has-fou
+      
+    
+    </summary>
+    
+      <category term="技术" scheme="https://zurichcape.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+      <category term="Java" scheme="https://zurichcape.github.io/tags/Java/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>深度学习</title>
+    <link href="https://zurichcape.github.io/2018/04/15/%E6%B7%B1%E5%BA%A6%E5%AD%A6%E4%B9%A0/"/>
+    <id>https://zurichcape.github.io/2018/04/15/深度学习/</id>
+    <published>2018-04-15T15:03:37.000Z</published>
+    <updated>2018-04-19T09:24:16.086Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h2><ul><li>neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果.</li><li>ReLu function<a id="more"></a></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;神经网络&quot;&gt;&lt;a href=&quot;#神经网络&quot; class=&quot;headerlink&quot; title=&quot;神经网络&quot;&gt;&lt;/a&gt;神经网络&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果.&lt;/li&gt;
+&lt;li&gt;ReLu function
+    
+    </summary>
+    
+      <category term="技术" scheme="https://zurichcape.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Python learning</title>
+    <link href="https://zurichcape.github.io/2018/03/13/Python-learning/"/>
+    <id>https://zurichcape.github.io/2018/03/13/Python-learning/</id>
+    <published>2018-03-13T14:45:26.000Z</published>
+    <updated>2018-04-19T09:24:05.884Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="正则表达式"><a href="#正则表达式" class="headerlink" title="正则表达式"></a>正则表达式</h2><p><ol></ol></p><p><li>模块</li></p><p><li>模式</li></p><p><li>修饰符</li><br><br><a id="more"></a></p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;正则表达式&quot;&gt;&lt;a href=&quot;#正则表达式&quot; class=&quot;headerlink&quot; title=&quot;正则表达式&quot;&gt;&lt;/a&gt;正则表达式&lt;/h2&gt;&lt;p&gt;&lt;ol&gt;&lt;/ol&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;模块&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;模式&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;修饰符&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="https://zurichcape.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="Python" scheme="https://zurichcape.github.io/tags/Python/"/>
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>管理经济学</title>
+    <link href="https://zurichcape.github.io/2018/03/13/%E7%AE%A1%E7%90%86%E7%BB%8F%E6%B5%8E%E5%AD%A6/"/>
+    <id>https://zurichcape.github.io/2018/03/13/管理经济学/</id>
+    <published>2018-03-13T11:09:43.000Z</published>
+    <updated>2018-04-18T16:51:45.593Z</updated>
+    
+    <content type="html"><![CDATA[<pre><code>jjxgx2017@126.comjjxgx201</code></pre><p><ul></ul></p><p><li>平时成绩:30% </li></p><p><li>期末笔试:70%</li></p><p><li>需求、消费和均衡</li></p><p><li>消费者行为</li></p><p><li>企业生产理论</li></p><p><li>成本理论</li><br><br><a id="more"></a></p><h2 id="市场类型"><a href="#市场类型" class="headerlink" title="市场类型"></a>市场类型</h2><p><ul></ul></p><p><li>完全竞争市场</li></p><p><li>垄断市场</li></p><p><li>垄断竞争市场(eg:特征|品牌)</li></p><p><li>寡头垄断市场</li><br><br>稀缺(scarcity)：社会资源的有限性，是指社会提供的东西少于人们想拥有的。<br>选择(choice)：因为稀缺，人们不能得到所有想要的东西，不得不在有限的资源下做出选择。这是稀缺的结果(相对于人的欲望)<br>机会成本(opportunity cost)：为了得到某种东西所必须放弃的东西。这是选择的结果。(把某资源投入某一特定用途后，所放弃的在其他用途上能得到的最大利益)</p><p>经济学十大原理<br>(1:权衡取舍（To get one thing, we usually have to give up another thing|Efficiency v. Equity）<br>(2:某物的成本是为此放弃的东西(the cost of something is what you give up to get it|a decision requires considering its cost and benefits)<br>(3:理性人思考边际量(Rational people think at tge margin)<br>(4:人们会对激励做出反应(people respond to incentive)<br>(5:贸易能使人人受益(trade can make everyone better off)<br>(6:市场通常是组织经济活动的好方式(Markets arre usually a good way to organize economic activity)<br>(7:政府有时可以改进市场结果(Goverments can sometimes improve market outcomes)<br>(8:<br>(9:通货膨胀<br>1.循环流向图<br>物品与劳务市场                    生产要素市场<br>土地：<br>劳动：<br>资本：<br>企业：<br>家庭<br>2.生产可能性边界([production possibilities frontier])<br>效率<br>权衡取舍<br>机会成本<br>经济增长</p><h2 id="经济学的分析方法"><a href="#经济学的分析方法" class="headerlink" title="经济学的分析方法"></a>经济学的分析方法</h2><ol><li>实证分析(世界是什么样的)</li><li>规范分析(世界应该是什么样的)<h2 id="需求与需求定律"><a href="#需求与需求定律" class="headerlink" title="需求与需求定律"></a>需求与需求定律</h2>1.需求：是指居民在某一特定时期内，在每一价格水平下愿意而且能够购买的商品量<br>需求是购买欲望与支付能力的统一<br>需求、欲望、需求<br>2.影响需求的因素<br>商品本身的价格<br>其他相关商品的价格<br>替代品<br>互补品<br>消费者的收入(社会收入水平与贫富差距)<br>消费者嗜好<br>政府消费政策<br>人口数量<br>需求量的变动(价格的变化)和需求的变动(其他因素的变化:收入变化)收入减少(需求曲线左移，反之，右移)<br>影响供给的因素<br>商品本身的价格<br>生产要素的价格<br>预期的未来价格<br>供给者的数量<br>技术</li></ol><ul><li>供给定律<br>供给量的变化(价格变化)供给的变动(供给增加，曲线右移)<br>市场均衡 ：稳定、最优<br>分析均衡的三个步骤<br>1.确定该事件是供给曲线移动了还是需求曲线，亦或两者<br>2.确定曲线移动的方向<br>3.用供求图说明这种移动如何改变均衡价格和均衡数量<h2 id="弹性-elasticity"><a href="#弹性-elasticity" class="headerlink" title="弹性(elasticity)"></a>弹性(elasticity)</h2>相对数之间的相互关系百分数变动的比率<br>需求弹性 = 需求量变动的百分比/价格变动的百分比<br>无弹性<br>无限弹性<br>单位弹性<br>完全弹性<br>倾斜程度(45度作为分界)大于45度，缺乏弹性<br>需求的价格弹性和厂商的销售收入(大于)<br>反之(小于)<br>薄利多销(弹性大(大于一)的商品)<br>需求收入弹性：需求变化幅度与收入变动幅度的比值<br>需求收入弹性大：高档品/奢侈品<br>需求收入小：必需品<br>需求收入弹性为负：低档品/劣等品<br>需求的交叉弹性：需求变化幅度与替代品（互补品）价格变化幅度的比值<br>需求交叉弹性大于零，替代品<br>需求交叉弹性小于零，互补品<br>需求交叉弹性等于零，不相关品<br>供给的价格弹性：线性相关<br>限制几个：政府为限制某些生活必需品的物价上涨而规定的最高价格<h2 id="剩余"><a href="#剩余" class="headerlink" title="剩余"></a>剩余</h2>消费者福利：<br>消费者剩余：衡量买方的消费者福利 支付意愿-实际价格<br>需求曲线和价格及纵轴围成的面积<br>用需求曲线衡量消费者剩余<br>需求曲线以下的面积是消费者剩余<br>价格下降，消费者福利增加<br>生产者剩余<br>生产者剩余与供给曲线<br>供给曲线和价格及纵轴围成的面积<br>市场效率<br>经济福利与总剩余<br>总剩余 = 消费者剩余+生产者剩余<br>总剩余 = 支付意愿-卖方的成本<br>实现总剩余最大化，则称市场有效 有效的配置 均衡数量 无效率与贸易 效率与平等<h2 id="生产成本"><a href="#生产成本" class="headerlink" title="生产成本"></a>生产成本</h2></li><li>供给定律</li><li>企业的目标</li><li>企业的总收益与总成本</li><li>企业的利润 = 总收益 - 总成本</li><li>作为机会成本的成本：<br>  1)显性成本：对生产要素直接的资金支出<br>  2)隐性成本：不涉及直接的资金支出(放弃的能得到的资金的机会成本)</li><li>经济利润和会计利润<br>  1)总收益 - 所有机会成本<br>  2)总收益 - 显性成本</li><li>生产函数和总成本<br>  1)边际产量：增加一单位的投入而增加的产量<br>  2)边际产量递减规律：某投入的边际产量随其投入量增加而下降的性质(等待、协调等的过程)<br>  3)生产函数的斜率是边际产量<br>  4)总成本曲线：边际产量递减，边际成本递增</li><li>固定成本和可变成本<br>  1)不随生产的产品数量改变而改变的成本<br>  2)随生产的产品数量改变而改变的成本</li><li>总成本一族<br>  1)总固定成本<br>  2)总可变成本<br>  3)总成本<br>  TC = TFC + TVC</li><li>平均成本一族<br>  1)平均固定成本<br>  2)平均可变成本<br>  3)平均总成本<br>  ATC = AFC + AVC</li><li>边际成本：增加一单位的产量时增加的总成本量</li><li>平均总成本曲线：U型先下降后上升</li><li>边际成本曲线<br>  1)边际成本随产量增加最终会上升<br>  2)平均总成本曲线为U型<br>  3)在曲线最低点是生产一个产品的最低成本(有效规模)<br>边际成本和平均总成本之间的关系<br>只要边际成本小于平均总成本，平均总成本就是下降的<br>边际成本呢曲线和平均总成本曲线在有效率规模处相交<br>长期成本：固定成本可以变成可变成本<br>短期成本：某些成本是固定不变的</li><li>长期和短期的平均总成本</li><li>规模经济：长期平均总成本不变</li><li>规模不经济：长期平均总成本增加</li><li>规模报酬不变<h2 id="竞争市场上的企业"><a href="#竞争市场上的企业" class="headerlink" title="竞争市场上的企业"></a>竞争市场上的企业</h2></li><li>完全竞争市场：<br>  买卖方很多<br>  各个卖者提供的商品大致是相同的<br>  自由地进入和退出市场<br>  任何一个买者或者卖者的行动对市场价格的影响可以忽略不计<br>  每一个卖者和卖者都能接受市场决定的价格</li><li>竞争企业的收益<br>  1)总收益 TP = (P<em>Q)<br>  2)平均收益AR = (P</em>Q)/Q = P<br>  3)边际收益MR = 物品价格</li><li>企业利润最大化<br>  当边际收益等于边际成本的时候所对应的产量<br>  when MR &gt; MC 增加 Q<br>  when MR &lt; MC 减少 Q</li><li><p>边际成本曲线与企业的供给曲线</p></li><li><p>企业的短期停业决策<br>  1)沉没成本 是机会成本的反面，是不可避免的<br>  2)如果得到的收益小于生产的可变成本时，企业就停止营业<br>  3)在长期，如果从生产中得到的收益将小于它的总成本，企业就会退出<br>  4)如果有利可图，企业就会进入</p></li><li><p>垄断竞争市场：<br>  竞争企业是价格接受者<br>  企业是价格制定者<br>  产生垄断的根本原因是进入障碍：</p><pre><code>关键资源由一家企业所有政府给予了一个企业生产某种产品的独享的权利生产成本使一个企业生产效率更高：自然垄断</code></pre><p>  垄断与竞争的需求曲线<br>  竞争(水平)<br>  垄断(右下方倾斜的市场曲线)<br>  垄断者的收益:</p><pre><code>TR = P*QAR = TR/Q = PMR = ΔTR/R = ΔT边际收益永远小于平均收益</code></pre><p>  垄断者的利益最大化</p><pre><code>边际收益等于边际成本</code></pre><p>  垄断者的利润</p><pre><code>垄断者将获得经济利润，只要价格高于平均总成本</code></pre><p>  垄断的福利代价</p><pre><code>垄断的无效率(未在边际成本和需求的交点)</code></pre><p>  不完全竞争</p><pre><code>介于完全竞争和垄断竞争之间的竞争</code></pre><p>  寡头</p><pre><code>少数几个卖者提供相似的产品</code></pre><p>  博弈论<br>  战略决策</p></li></ul>]]></content>
+    
+    <summary type="html">
+    
+      &lt;pre&gt;&lt;code&gt;jjxgx2017@126.com
+jjxgx201
+&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;&lt;ul&gt;&lt;/ul&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;平时成绩:30% &lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;期末笔试:70%&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;需求、消费和均衡&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;消费者行为&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;企业生产理论&lt;/li&gt;&lt;/p&gt;
+&lt;p&gt;&lt;li&gt;成本理论&lt;/li&gt;&lt;br&gt;&lt;br&gt;
+    
+    </summary>
+    
+      <category term="学术" scheme="https://zurichcape.github.io/categories/%E5%AD%A6%E6%9C%AF/"/>
+    
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>About hexo</title>
+    <link href="https://zurichcape.github.io/2018/03/02/hexo%E7%9B%B8%E5%85%B3%E5%86%85%E5%AE%B9/"/>
+    <id>https://zurichcape.github.io/2018/03/02/hexo相关内容/</id>
+    <published>2018-03-02T13:44:20.578Z</published>
+    <updated>2018-04-19T09:24:25.774Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="Hexo"><a href="#Hexo" class="headerlink" title="Hexo"></a>Hexo</h2><p>Hexo的原理就是在执行hexo g的时候在本地先将博客生成的一套静态站点放到public文件夹中,在执行hexo d<br>命令的时候又将这些文件拷贝到.deploy文件夹中.Github版本库通常会建议附上相关的Readme.md文件,但是<br>hexo默认会解析所有的md文件成为html文件，所以即使生成了Readme.md文件，也会在你下一次部署的时候被<br>删去.<br>防止方法:在执行hexo d之前将本地写好的Readme文件复制到.deploy文件夹中</p><a id="more"></a><h1 id="文章"><a href="#文章" class="headerlink" title="文章"></a>文章</h1><p>hexo n “文章标题”<br>在本地博客文件夹source_posts文件夹下看到我们新建的 markdown 文件。<br>当然，我们也可以手动添加Markdown文件在source-&gt;_deploy文件夹下，其效果同样可以媲美hexo new<br>文章编辑好之后，运行生成、部署命令：<br>hexo clean<br>hexo g<br>hexo d<br>等同于<br>hexo clean<br>hexo d -g</p><h1 id="页面"><a href="#页面" class="headerlink" title="页面"></a>页面</h1><p>hexo n page folder</p><h1 id="标签"><a href="#标签" class="headerlink" title="标签"></a>标签</h1><ol><li>tags: [a, b, c]</li><li>tags:</li></ol><ul><li>a</li><li>b</li><li>c</li></ul><h1 id="插件"><a href="#插件" class="headerlink" title="插件"></a>插件</h1><p><b>添加 sitemap 和 feed 插件:</b><br>切换到本地的hexo目录,在命令行窗口，输入以下命令<br>npm install hexo-generator-feed -save<br>npm install hexo-generator-sitemap -save</p>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;Hexo&quot;&gt;&lt;a href=&quot;#Hexo&quot; class=&quot;headerlink&quot; title=&quot;Hexo&quot;&gt;&lt;/a&gt;Hexo&lt;/h2&gt;&lt;p&gt;Hexo的原理就是在执行hexo g的时候在本地先将博客生成的一套静态站点放到public文件夹中,在执行hexo d&lt;br&gt;命令的时候又将这些文件拷贝到.deploy文件夹中.Github版本库通常会建议附上相关的Readme.md文件,但是&lt;br&gt;hexo默认会解析所有的md文件成为html文件，所以即使生成了Readme.md文件，也会在你下一次部署的时候被&lt;br&gt;删去.&lt;br&gt;防止方法:在执行hexo d之前将本地写好的Readme文件复制到.deploy文件夹中&lt;/p&gt;
+    
+    </summary>
+    
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>Zurichcape&#39;s first aricle</title>
+    <link href="https://zurichcape.github.io/2018/02/06/Zurichcape&#39;s%20first%20aricle/"/>
+    <id>https://zurichcape.github.io/2018/02/06/Zurichcape&#39;s first aricle/</id>
+    <published>2018-02-06T14:53:16.000Z</published>
+    <updated>2018-04-19T09:24:40.064Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h2><p>Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。<br>使用github pages服务搭建博客的好处有：</p><ol><li>全是静态文件，访问速度快；</li><li>免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；</li><li>可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；</li></ol><a id="more"></a><ol><li>数据绝对安全，基于github的版本管理，想恢复到哪个历史版本都行；</li><li>博客内容可以轻松打包、转移、发布到其它平台；</li><li>GitHub Pages 自定义404页面非常容易，直接在根目录下创建自己的404.html就可以。但是自定义404页面<br>仅对绑定顶级域名的项目才起作用，GitHub默认分配的二级域名是不起作用的，<br>使用hexo server在本机调试也是不起作用的。</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;前言&quot;&gt;&lt;a href=&quot;#前言&quot; class=&quot;headerlink&quot; title=&quot;前言&quot;&gt;&lt;/a&gt;前言&lt;/h2&gt;&lt;p&gt;Github Pages 是面向用户、组织和项目开放的公共静态页面搭建托管服务，站点可以被免费托管在 Github 上，你可以选择使用 Github Pages 默 认提供的域名 github.io 或者自定义域名来发布站点。&lt;br&gt;使用github pages服务搭建博客的好处有：&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;全是静态文件，访问速度快；&lt;/li&gt;
+&lt;li&gt;免费方便，不用花一分钱就可以搭建一个自由的个人博客，不需要服务器不需要后台；&lt;/li&gt;
+&lt;li&gt;可以随意绑定自己的域名，不仔细看的话根本看不出来你的网站是基于github的；&lt;/li&gt;
+&lt;/ol&gt;
+    
+    </summary>
+    
+      <category term="技术" scheme="https://zurichcape.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="始地" scheme="https://zurichcape.github.io/tags/%E5%A7%8B%E5%9C%B0/"/>
+    
+      <category term="fun" scheme="https://zurichcape.github.io/tags/fun/"/>
+    
+  </entry>
+  
+</feed>
