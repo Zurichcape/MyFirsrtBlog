@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://zurichcape.github.io/"/>
-  <updated>2018-04-19T09:19:55.400Z</updated>
+  <updated>2018-04-22T03:00:00.475Z</updated>
   <id>https://zurichcape.github.io/</id>
   
   <author>
@@ -15,6 +15,33 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>第一周</title>
+    <link href="https://zurichcape.github.io/2018/04/20/%E7%AC%AC%E4%B8%80%E5%91%A8/"/>
+    <id>https://zurichcape.github.io/2018/04/20/第一周/</id>
+    <published>2018-04-20T04:50:29.000Z</published>
+    <updated>2018-04-22T03:00:00.475Z</updated>
+    
+    <content type="html"><![CDATA[<a id="more"></a><h2 id="网络小说预料处理"><a href="#网络小说预料处理" class="headerlink" title="网络小说预料处理"></a>网络小说预料处理</h2><ol><li>利用python的正则表达式我首先进行了文件数量的统计</li><li>利用正则表达式转变小说文本里的全角符号和半角符号、</li></ol>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h2 id=&quot;网络小说预料处理&quot;&gt;&lt;a href=&quot;#网络小说预料处理&quot; class=&quot;headerlink&quot; title=&quot;网络小说预料处理&quot;&gt;&lt;/a&gt;网络小说预料处理&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;利用python的正则表达式我首先进行了文件
+      
+    
+    </summary>
+    
+    
+      <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+      <category term="大创" scheme="https://zurichcape.github.io/tags/%E5%A4%A7%E5%88%9B/"/>
+    
+  </entry>
   
   <entry>
     <title>Java_learning</title>
@@ -88,9 +115,9 @@
       <category term="技术" scheme="https://zurichcape.github.io/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="Python" scheme="https://zurichcape.github.io/tags/Python/"/>
-    
       <category term="note" scheme="https://zurichcape.github.io/tags/note/"/>
+    
+      <category term="Python" scheme="https://zurichcape.github.io/tags/Python/"/>
     
   </entry>
   

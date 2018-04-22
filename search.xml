@@ -3,6 +3,23 @@
   
     
     <entry>
+      <title>第一周</title>
+      <link href="/2018/04/20/%E7%AC%AC%E4%B8%80%E5%91%A8/"/>
+      <url>/2018/04/20/%E7%AC%AC%E4%B8%80%E5%91%A8/</url>
+      <content type="html"><![CDATA[<a id="more"></a><h2 id="网络小说预料处理"><a href="#网络小说预料处理" class="headerlink" title="网络小说预料处理"></a>网络小说预料处理</h2><ol><li>利用python的正则表达式我首先进行了文件数量的统计</li><li>利用正则表达式转变小说文本里的全角符号和半角符号、</li></ol>]]></content>
+      
+      
+        <tags>
+            
+            <tag> note </tag>
+            
+            <tag> 大创 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>Java_learning</title>
       <link href="/2018/04/19/java-note/"/>
       <url>/2018/04/19/java-note/</url>
@@ -61,9 +78,9 @@
       
         <tags>
             
-            <tag> Python </tag>
-            
             <tag> note </tag>
+            
+            <tag> Python </tag>
             
         </tags>
       
