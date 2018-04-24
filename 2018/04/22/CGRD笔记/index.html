@@ -87,7 +87,7 @@
 
 
 
-  <meta name="keywords" content="note," />
+  <meta name="keywords" content="Python,深度学习," />
 
 
 
@@ -100,18 +100,18 @@
 
 
 
-<meta name="description" content="神经网络 neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果. ReLu function">
-<meta name="keywords" content="note">
+<meta name="description" content="what is CGRD?Chinese Grammatical Error Diagnosis:  The system should identify whether a given sentence contains grammatical errors, identify the error types, and indicate the range of occurred errors.">
+<meta name="keywords" content="Python,深度学习">
 <meta property="og:type" content="article">
-<meta property="og:title" content="深度学习">
-<meta property="og:url" content="https://zurichcape.github.io/2018/04/15/深度学习/index.html">
+<meta property="og:title" content="CGRD笔记">
+<meta property="og:url" content="https://zurichcape.github.io/2018/04/22/CGRD笔记/index.html">
 <meta property="og:site_name" content="Little Programmer">
-<meta property="og:description" content="神经网络 neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果. ReLu function">
+<meta property="og:description" content="what is CGRD?Chinese Grammatical Error Diagnosis:  The system should identify whether a given sentence contains grammatical errors, identify the error types, and indicate the range of occurred errors.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-04-19T09:24:16.086Z">
+<meta property="og:updated_time" content="2018-04-23T15:43:46.528Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="深度学习">
-<meta name="twitter:description" content="神经网络 neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果. ReLu function">
+<meta name="twitter:title" content="CGRD笔记">
+<meta name="twitter:description" content="what is CGRD?Chinese Grammatical Error Diagnosis:  The system should identify whether a given sentence contains grammatical errors, identify the error types, and indicate the range of occurred errors.">
 
 
 
@@ -141,13 +141,13 @@
 
 
 
-  <link rel="canonical" href="https://zurichcape.github.io/2018/04/15/深度学习/"/>
+  <link rel="canonical" href="https://zurichcape.github.io/2018/04/22/CGRD笔记/"/>
 
 
 
 
 
-  <title>深度学习 | Little Programmer</title>
+  <title>CGRD笔记 | Little Programmer</title>
   
 
 
@@ -339,7 +339,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://zurichcape.github.io/2018/04/15/深度学习/">
+    <link itemprop="mainEntityOfPage" href="https://zurichcape.github.io/2018/04/22/CGRD笔记/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Zurichcape">
@@ -356,7 +356,7 @@
 
         
         
-          <h2 class="post-title" itemprop="name headline">深度学习</h2>
+          <h2 class="post-title" itemprop="name headline">CGRD笔记</h2>
         
 
         <div class="post-meta">
@@ -368,8 +368,8 @@
               
                 <span class="post-meta-item-text">Veröffentlicht am</span>
               
-              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-15T23:03:37+08:00">
-                2018-04-15
+              <time title="Post created" itemprop="dateCreated datePublished" datetime="2018-04-22T18:24:08+08:00">
+                2018-04-22
               </time>
             
 
@@ -408,7 +408,7 @@
 
           
           
-             <span id="/2018/04/15/深度学习/" class="leancloud_visitors" data-flag-title="深度学习">
+             <span id="/2018/04/22/CGRD笔记/" class="leancloud_visitors" data-flag-title="CGRD笔记">
                <span class="post-meta-divider">|</span>
                <span class="post-meta-item-icon">
                  <i class="fa fa-eye"></i>
@@ -434,7 +434,7 @@
                   <span class="post-meta-item-text">Words count in article&#58;</span>
                 
                 <span title="Words count in article">
-                  38
+                  302
                 </span>
               
 
@@ -450,7 +450,7 @@
                   <span class="post-meta-item-text">Reading time &asymp;</span>
                 
                 <span title="Reading time">
-                  1
+                  2
                 </span>
               
             </div>
@@ -471,9 +471,46 @@
       
 
       
-        <h2 id="神经网络"><a href="#神经网络" class="headerlink" title="神经网络"></a>神经网络</h2><ul>
-<li>neural network:由多个神经元组成的函数网络,通过输入一些数据就能得到想要的结果.</li>
-<li>ReLu function<a id="more"></a></li>
+        <h2 id="what-is-CGRD"><a href="#what-is-CGRD" class="headerlink" title="what is CGRD?"></a>what is CGRD?</h2><pre><code>Chinese Grammatical Error Diagnosis: 
+The system should identify whether a given sentence contains grammatical errors, identify the error types, and indicate the range of occurred errors.
+</code></pre><h2 id="why-we-want-to-do-this"><a href="#why-we-want-to-do-this" class="headerlink" title="why we want to do this?"></a>why we want to do this?</h2><pre><code>To identify the grammatical errors in the sentence written by CFL leaners.There are four error types,that is,mis-ordering(Permutation),redundancy(Addition),omission(Deletion),mis-selection(Substitution)
+</code></pre><h2 id="how-it-works"><a href="#how-it-works" class="headerlink" title="how it works?"></a>how it works?</h2><pre><code>The input instance is given a unique sentence number sid. If the inputs contain no grammatical
+errors, the tool should return “sid, correct”. If an input sentence contains a grammatical error, 
+the output format should be a quadruple of “sid, start_off, end_off, error_type”, where “start_off”
+and “end_off” respectively denote the characters at which the grammatical error starts and ends,
+where each character or punctuation mark occupies 1 space for counting positions. “Error_type” represents one defined error type in terms of “Redundant,” “Missing,” “Selection,” and “Disorder”. 
+</code></pre><p><b>Examples are shown as follows.<b></b></b></p>
+<pre><code>• Example 1
+    Input: (sid=B2-0080) 他是我的以前的室友
+    Output: B2-0080, 4, 4, Redundant
+• Example 2
+    Input: (sid=A2-0017) 那電影是機器人的故事
+    Output: A2-0017, 2, 2, Missing
+• Example 3
+    Input: (sid=A2-0017) 那部電影是機器人的故事
+    Output: A2-0017, correct
+• Example 4
+    Input: (sid=B1-1193) 吳先生是修理腳踏車的拿手
+    Output: B1-1193, 11, 12, Selection
+
+&lt;DOC&gt;
+&lt;SENTENCE id=&quot;B1-1120&quot;&gt;
+我的中文進步了非常快
+&lt;/SENTENCE&gt;
+&lt;MISTAKE start_off=&quot;7&quot; end_off=&quot;7&quot;&gt;
+&lt;TYPE&gt;
+Selection
+&lt;/TYPE&gt;
+&lt;CORRECTION&gt;
+我的中文進步得非常快
+&lt;/CORRECTION&gt;
+&lt;/MISTAKE&gt;
+&lt;/DOC&gt;
+</code></pre><ul>
+<li>Data preparation:<br>  An essay will be spilited into  three sets:<pre><code>1. training set
+2. dryrun set
+3. testing set
+</code></pre></li>
 </ul>
 
       
@@ -524,7 +561,9 @@
       
         <div class="post-tags">
           
-            <a href="/tags/note/" rel="tag"><i class="fa fa-tag"></i> note</a>
+            <a href="/tags/Python/" rel="tag"><i class="fa fa-tag"></i> Python</a>
+          
+            <a href="/tags/深度学习/" rel="tag"><i class="fa fa-tag"></i> 深度学习</a>
           
         </div>
       
@@ -552,8 +591,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2018/03/13/Python-learning/" rel="next" title="Python learning">
-                <i class="fa fa-chevron-left"></i> Python learning
+              <a href="/2018/04/20/第一周/" rel="next" title="第一周">
+                <i class="fa fa-chevron-left"></i> 第一周
               </a>
             
           </div>
@@ -561,10 +600,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2018/04/19/java-note/" rel="prev" title="Java_learning">
-                Java_learning <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -731,7 +766,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#神经网络"><span class="nav-number">1.</span> <span class="nav-text">神经网络</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#what-is-CGRD"><span class="nav-number">1.</span> <span class="nav-text">what is CGRD?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#why-we-want-to-do-this"><span class="nav-number">2.</span> <span class="nav-text">why we want to do this?</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#how-it-works"><span class="nav-number">3.</span> <span class="nav-text">how it works?</span></a></li></ol></div>
             
 
           </div>

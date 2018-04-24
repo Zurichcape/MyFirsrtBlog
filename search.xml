@@ -3,6 +3,29 @@
   
     
     <entry>
+      <title>CGRD笔记</title>
+      <link href="/2018/04/22/CGRD%E7%AC%94%E8%AE%B0/"/>
+      <url>/2018/04/22/CGRD%E7%AC%94%E8%AE%B0/</url>
+      <content type="html"><![CDATA[<h2 id="what-is-CGRD"><a href="#what-is-CGRD" class="headerlink" title="what is CGRD?"></a>what is CGRD?</h2><pre><code>Chinese Grammatical Error Diagnosis: The system should identify whether a given sentence contains grammatical errors, identify the error types, and indicate the range of occurred errors.</code></pre><h2 id="why-we-want-to-do-this"><a href="#why-we-want-to-do-this" class="headerlink" title="why we want to do this?"></a>why we want to do this?</h2><pre><code>To identify the grammatical errors in the sentence written by CFL leaners.There are four error types,that is,mis-ordering(Permutation),redundancy(Addition),omission(Deletion),mis-selection(Substitution)</code></pre><h2 id="how-it-works"><a href="#how-it-works" class="headerlink" title="how it works?"></a>how it works?</h2><pre><code>The input instance is given a unique sentence number sid. If the inputs contain no grammaticalerrors, the tool should return “sid, correct”. If an input sentence contains a grammatical error, the output format should be a quadruple of “sid, start_off, end_off, error_type”, where “start_off”and “end_off” respectively denote the characters at which the grammatical error starts and ends,where each character or punctuation mark occupies 1 space for counting positions. “Error_type” represents one defined error type in terms of “Redundant,” “Missing,” “Selection,” and “Disorder”. </code></pre><p><b>Examples are shown as follows.<b></b></b></p><pre><code>• Example 1    Input: (sid=B2-0080) 他是我的以前的室友    Output: B2-0080, 4, 4, Redundant• Example 2    Input: (sid=A2-0017) 那電影是機器人的故事    Output: A2-0017, 2, 2, Missing• Example 3    Input: (sid=A2-0017) 那部電影是機器人的故事    Output: A2-0017, correct• Example 4    Input: (sid=B1-1193) 吳先生是修理腳踏車的拿手    Output: B1-1193, 11, 12, Selection&lt;DOC&gt;&lt;SENTENCE id=&quot;B1-1120&quot;&gt;我的中文進步了非常快&lt;/SENTENCE&gt;&lt;MISTAKE start_off=&quot;7&quot; end_off=&quot;7&quot;&gt;&lt;TYPE&gt;Selection&lt;/TYPE&gt;&lt;CORRECTION&gt;我的中文進步得非常快&lt;/CORRECTION&gt;&lt;/MISTAKE&gt;&lt;/DOC&gt;</code></pre><ul><li>Data preparation:<br>  An essay will be spilited into  three sets:<pre><code>1. training set2. dryrun set3. testing set</code></pre></li></ul>]]></content>
+      
+      <categories>
+          
+          <category> 技术 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Python </tag>
+            
+            <tag> 深度学习 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    <entry>
       <title>第一周</title>
       <link href="/2018/04/20/%E7%AC%AC%E4%B8%80%E5%91%A8/"/>
       <url>/2018/04/20/%E7%AC%AC%E4%B8%80%E5%91%A8/</url>
@@ -78,9 +101,9 @@
       
         <tags>
             
-            <tag> note </tag>
-            
             <tag> Python </tag>
+            
+            <tag> note </tag>
             
         </tags>
       
